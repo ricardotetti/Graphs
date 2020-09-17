@@ -21,9 +21,9 @@ i_t = 5/(D*D)
 r_t = 0/(D*D)
 s_t = 95/(D*D)
 
-print((1-(1-(i_t*lam))**a))
-print(s_t)
-print(s_t*((1-(1-(i_t*lam))**a)))
+#print((1-(1-(i_t*lam))**a))
+#print(s_t)
+#print(s_t*((1-(1-(i_t*lam))**a)))
 
 for i in range(time):
     i_T = i_t + s_t*(1-(1-(i_t*lam))**a) - mu*i_t
@@ -47,6 +47,8 @@ time_vec = np.arange(time)
 plt.plot(time_vec, N_I)
 plt.plot(time_vec, N_R)
 plt.plot(time_vec, N_S)
+plt.legend(('Infected', 'Recovered', 'Susceptible'),
+           loc='center right')
 plt.show()
 
 
