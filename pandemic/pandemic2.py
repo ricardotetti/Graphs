@@ -44,9 +44,7 @@ def update(frame,rt,ct,t):
     colores = []
     sizes = [8 for p in pessoas]
     for p in pessoas:
-        #check how much time the person has been sick
         p.check_contagio(frame)
-        #animate the movement of each person
         p.update_pos(0,0)
         if p.retirado:
             recuciclo+=1 #count the amount of recovered
