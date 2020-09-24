@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 D = 10
-N = 100
+N = 500
 r = 1
 a = np.pi*r*r
 rho = N/(D*D)
@@ -11,7 +11,7 @@ v = 0.1
 mu = 0.05
 t = 300
 P = 0.01
-time = 300
+time = 100
 
 S = []
 I = []
